@@ -3,8 +3,8 @@ using System.Collections;
 
 public class Movement : MonoBehaviour {
 
-    public float moveSpeed = 0.5f;
-    public float maxSpeed = 0.5f;
+    public float moveSpeed = 1f;
+    public float maxSpeed = 1f;
     private Rigidbody2D rb;
 
 	// Use this for initialization
@@ -28,7 +28,7 @@ public class Movement : MonoBehaviour {
 
         if (Input.GetAxisRaw("Horizontal") < 0.5f && Input.GetAxisRaw("Horizontal") > -0.5f)
         {
-            
+            rb.velocity = new Vector2(0f, rb.velocity.y);
         }
 
         if (Input.GetAxisRaw("Vertical") < 0.5f && Input.GetAxisRaw("Vertical") > -0.5f)
