@@ -28,10 +28,7 @@ public class Movement : MonoBehaviour {
 
         if (Input.GetAxisRaw("Horizontal") < 0.5f && Input.GetAxisRaw("Horizontal") > -0.5f)
         {
-            while (rb.velocity.x > 0f && rb.velocity.x < 0.5f || rb.velocity.x > 0f && rb.velocity.x < -0.5f)
-            {
-                
-            }
+            
         }
 
         if (Input.GetAxisRaw("Vertical") < 0.5f && Input.GetAxisRaw("Vertical") > -0.5f)
