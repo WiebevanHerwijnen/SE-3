@@ -414,6 +414,7 @@ PlayerSettings:
   XboxOneSplashScreen: {fileID: 0}
   XboxOneAllowedProductIds: []
   XboxOnePersistentLocalStorageSize: 0
+<<<<<<< HEAD
   intPropertyNames:
   - Android::ScriptingBackend
   - Standalone::ScriptingBackend
@@ -515,6 +516,25 @@ PlayerSettings:
   XboxOne::VR::enabledDevices: []
   iOS::VR::enabledDevices: []
   tvOS::VR::enabledDevices: []
+=======
+  xboxOneScriptCompiler: 0
+  vrEditorSettings:
+    daydream:
+      daydreamIconForeground: {fileID: 0}
+      daydreamIconBackground: {fileID: 0}
+  cloudServicesEnabled:
+    Analytics: 0
+    Build: 0
+    Collab: 0
+    ErrorHub: 0
+    Game_Performance: 0
+    Hub: 0
+    Purchasing: 0
+    UNet: 1
+    Unity_Ads: 0
+  facebookSdkVersion: 7.9.4
+  apiCompatibilityLevel: 2
+>>>>>>> 82d52e9fcf9971cb4b4fb9e80f6745f429df1a47
   cloudProjectId: 14ceb39e-ece5-4a99-b902-992c0a4c0e5e
   projectName: SE-3 (1)
   organizationId: s3cond-ch4nce
