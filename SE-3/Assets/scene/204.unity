@@ -228,7 +228,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &825035904
 EdgeCollider2D:
@@ -298,69 +298,47 @@ EdgeCollider2D:
   - {x: 1.1600126, y: -0.6598269}
   - {x: 0.970042, y: -0.6603494}
   - {x: 0.9709542, y: 0.61909753}
---- !u!1001 &1013127749
+--- !u!1001 &1489206986
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4028445482536102, guid: 587ef013f5e3e440b856421d0617dfd3, type: 2}
+    - target: {fileID: 4555245986511566, guid: 438a032b46e171245b12a8855e4b7b01, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.88867
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4028445482536102, guid: 587ef013f5e3e440b856421d0617dfd3, type: 2}
+    - target: {fileID: 4555245986511566, guid: 438a032b46e171245b12a8855e4b7b01, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.35133
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4028445482536102, guid: 587ef013f5e3e440b856421d0617dfd3, type: 2}
+    - target: {fileID: 4555245986511566, guid: 438a032b46e171245b12a8855e4b7b01, type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4028445482536102, guid: 587ef013f5e3e440b856421d0617dfd3, type: 2}
+    - target: {fileID: 4555245986511566, guid: 438a032b46e171245b12a8855e4b7b01, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4028445482536102, guid: 587ef013f5e3e440b856421d0617dfd3, type: 2}
+    - target: {fileID: 4555245986511566, guid: 438a032b46e171245b12a8855e4b7b01, type: 2}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4028445482536102, guid: 587ef013f5e3e440b856421d0617dfd3, type: 2}
+    - target: {fileID: 4555245986511566, guid: 438a032b46e171245b12a8855e4b7b01, type: 2}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4028445482536102, guid: 587ef013f5e3e440b856421d0617dfd3, type: 2}
+    - target: {fileID: 4555245986511566, guid: 438a032b46e171245b12a8855e4b7b01, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4028445482536102, guid: 587ef013f5e3e440b856421d0617dfd3, type: 2}
+    - target: {fileID: 4555245986511566, guid: 438a032b46e171245b12a8855e4b7b01, type: 2}
       propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1415178063263528, guid: 587ef013f5e3e440b856421d0617dfd3, type: 2}
-      propertyPath: m_Name
-      value: Lil Delft
-      objectReference: {fileID: 0}
-    - target: {fileID: 61301617188728282, guid: 587ef013f5e3e440b856421d0617dfd3,
-        type: 2}
-      propertyPath: m_Offset.y
-      value: -0.0037877513
-      objectReference: {fileID: 0}
-    - target: {fileID: 61301617188728282, guid: 587ef013f5e3e440b856421d0617dfd3,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 0.024842585
-      objectReference: {fileID: 0}
-    - target: {fileID: 4028445482536102, guid: 587ef013f5e3e440b856421d0617dfd3, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.42419812
-      objectReference: {fileID: 0}
-    - target: {fileID: 4028445482536102, guid: 587ef013f5e3e440b856421d0617dfd3, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.41580045
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 587ef013f5e3e440b856421d0617dfd3, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 438a032b46e171245b12a8855e4b7b01, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1695627425
 GameObject:
