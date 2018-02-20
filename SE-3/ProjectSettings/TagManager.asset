@@ -56,3 +56,6 @@ TagManager:
   - name: Backdrop
     uniqueID: 1337479127
     locked: 0
+  - name: buttons
+    uniqueID: 488356271
+    locked: 0
