@@ -7,12 +7,12 @@ public class Door : MonoBehaviour {
     public GameObject delft;
     public GameObject Deur2;
     public bool entered;
+  
 
 
 	// Use this for initialization
 	void Start () {
         
-
 
     }
 	
@@ -22,13 +22,13 @@ public class Door : MonoBehaviour {
 
         Vector2 DeurLocatie2 = Deur2.transform.position;
 
-        if (Input.GetKeyDown(KeyCode.E) && entered == true)
+       if (Input.GetKeyDown(KeyCode.E) && entered == true)
         {
             delft.transform.position = DeurLocatie2;
            
         }
-
-	}
+       
+    }
 
     private void OnTriggerEnter2D (Collider2D other)
     {

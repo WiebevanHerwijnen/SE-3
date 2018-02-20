@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Interaction : MonoBehaviour {
     public SpriteRenderer buttonrenderer;
+    
+
+    
 
     // Use this for initialization
     void Start()
@@ -11,6 +14,12 @@ public class Interaction : MonoBehaviour {
         buttonrenderer.enabled = false;
 
 
+    }
+
+    private void Update()
+    {
+      
+    
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
