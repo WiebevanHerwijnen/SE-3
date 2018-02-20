@@ -113,6 +113,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1 &144318866
 GameObject:
   m_ObjectHideFlags: 0
@@ -315,6 +316,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+=======
+>>>>>>> parent of 164996f... Merge branch 'master' of https://github.com/WiebevanHerwijnen/SE-3
 --- !u!1 &394954460 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1915625907346732, guid: b831c8ea2f1abff4a8aae07290d2a2a4,
@@ -951,6 +954,7 @@ Transform:
   m_Father: {fileID: 1944175841}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!114 &1284991112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1056,6 +1060,8 @@ MonoBehaviour:
   textObject: {fileID: 240015898}
   sprite: {fileID: 983127273}
   sleutel: {fileID: 419516845}
+=======
+>>>>>>> parent of 164996f... Merge branch 'master' of https://github.com/WiebevanHerwijnen/SE-3
 --- !u!1001 &1482030593
 Prefab:
   m_ObjectHideFlags: 0
