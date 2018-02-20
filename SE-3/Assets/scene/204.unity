@@ -113,34 +113,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &87085195
+--- !u!1 &394954460 stripped
 GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 87085196}
-  m_Layer: 0
-  m_Name: GameObject (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &87085196
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 87085195}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0026000142, y: -0.09380007, z: 0.12705378}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1284991111}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_PrefabParentObject: {fileID: 1915625907346732, guid: b831c8ea2f1abff4a8aae07290d2a2a4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1482030593}
 --- !u!4 &515229809 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4223075648490262, guid: b831c8ea2f1abff4a8aae07290d2a2a4,
@@ -228,6 +205,7 @@ GameObject:
   m_Component:
   - component: {fileID: 817997141}
   - component: {fileID: 817997140}
+  - component: {fileID: 817997142}
   m_Layer: 0
   m_Name: Deur 204-202
   m_TagString: Untagged
@@ -247,7 +225,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00078853965, y: 0.0026913881}
+  m_Offset: {x: 0.0011655986, y: -0.01842475}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -258,7 +236,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.08790475, y: 0.08233547}
+  m_Size: {x: 0.18820637, y: 0.04613638}
   m_EdgeRadius: 0
 --- !u!4 &817997141
 Transform:
@@ -267,12 +245,26 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 817997139}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.7445, y: -1.0319759, z: 0.013679334}
+  m_LocalPosition: {x: 0.7445, y: -1.0109, z: 0.013679334}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 825035903}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &817997142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 817997139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26c6069f601a64b4ca4526f4a4efcb3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delft: {fileID: 394954460}
+  Deur2: {fileID: 1284991108}
+  entered: 0
 --- !u!1 &825035900
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,8 +321,8 @@ EdgeCollider2D:
   - {x: 0.6204637, y: -1.0011959}
   - {x: 0.62071776, y: -1.0302453}
   - {x: 0.65033835, y: -1.0303184}
-  - {x: 0.6508972, y: -1.0696263}
-  - {x: 0.8399316, y: -1.0694547}
+  - {x: 0.68002003, y: -1.0305893}
+  - {x: 0.8046124, y: -1.029798}
   - {x: 0.83999294, y: -1.0296032}
   - {x: 1.421731, y: -1.0310624}
   - {x: 1.4200763, y: -0.6888054}
@@ -472,6 +464,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1284991111}
   - component: {fileID: 1284991110}
+  - component: {fileID: 1284991109}
   m_Layer: 0
   m_Name: Deur 202-204
   m_TagString: Untagged
@@ -479,6 +472,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1284991109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1284991108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26c6069f601a64b4ca4526f4a4efcb3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delft: {fileID: 394954460}
+  Deur2: {fileID: 817997139}
+  entered: 0
 --- !u!61 &1284991110
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -491,7 +498,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00041121244, y: 0.018032521}
+  m_Offset: {x: 0.00041121244, y: 0.06542778}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -502,7 +509,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.18978298, y: 0.11301774}
+  m_Size: {x: 0.18978298, y: 0.0814209}
   m_EdgeRadius: 0
 --- !u!4 &1284991111
 Transform:
@@ -511,10 +518,9 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1284991108}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.2644, y: 0.24679995, z: 0.013679334}
+  m_LocalPosition: {x: -0.2644, y: 0.1855, z: 0.013679334}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 87085196}
+  m_Children: []
   m_Father: {fileID: 1944175841}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -571,6 +577,15 @@ Prefab:
         type: 2}
       propertyPath: m_Size.y
       value: 0.19545054
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915625907346732, guid: b831c8ea2f1abff4a8aae07290d2a2a4, type: 2}
+      propertyPath: m_Name
+      value: Lil Delft
+      objectReference: {fileID: 0}
+    - target: {fileID: 20358019289067120, guid: b831c8ea2f1abff4a8aae07290d2a2a4,
+        type: 2}
+      propertyPath: field of view
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b831c8ea2f1abff4a8aae07290d2a2a4, type: 2}
@@ -699,11 +714,11 @@ EdgeCollider2D:
   - {x: 0.27052486, y: 0.11077452}
   - {x: 0.061191678, y: 0.11312485}
   - {x: 0.05896318, y: 0.22168636}
-  - {x: -0.17140573, y: 0.22208023}
-  - {x: -0.17047292, y: 0.26032352}
-  - {x: -0.3603611, y: 0.26028728}
+  - {x: -0.17140573, y: 0.22085238}
+  - {x: -0.21098292, y: 0.2210412}
+  - {x: -0.35422325, y: 0.2203908}
   - {x: -0.35972792, y: 0.22264194}
-  - {x: -0.36979842, y: 0.22230005}
+  - {x: -0.3691846, y: 0.22045851}
   - {x: -0.36990166, y: 0.0006580353}
   - {x: -0.26967728, y: -0.0007176399}
   - {x: -0.26924628, y: -0.13066864}
