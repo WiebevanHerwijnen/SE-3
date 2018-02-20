@@ -51,6 +51,6 @@ public class Tutorial : MonoBehaviour {
     public void Pagina2()
     {
         sleutel.SetActive(true);
-        textObject.GetComponent<TextMesh>().text = "Perfect!" + "\n" + "\n" + "Dan hebben we nu een ander probleem... " + "\n" + "De deur zit op slot..    Maar! ik weet wel iets!" + "\n" + "Volgensmij lag daar ergens bij de kast een sleutel?" + "\n" + "\n" + "Hij ziet er ongeveer zo uit!:";
+        textObject.GetComponent<TextMesh>().text = "Perfect!" + "\n" + "\n" + "Dan hebben we nu een ander probleem... " + "\n" + "De deur zit op slot..    Maar! ik weet wel iets!" + "\n" + "Volgensmij lag daar ergens bij de kast een sleutel?" + "\n" + "\n" + "Hij zag er volgensmij zo uit!:";
     }
 }

@@ -228,7 +228,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 419516845}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.042, y: -0.068, z: 0}
+  m_LocalPosition: {x: 0.0695, y: -0.0672, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 983127274}
@@ -920,7 +920,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textObject: {fileID: 240015898}
-  sprite: {fileID: 983127273}
+  sprite: {fileID: 2107005579}
   sleutel: {fileID: 419516845}
 --- !u!1001 &1482030593
 Prefab:
