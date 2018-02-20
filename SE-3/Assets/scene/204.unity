@@ -115,6 +115,7 @@ NavMeshSettings:
   m_NavMeshData: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &144318866
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,6 +231,8 @@ MonoBehaviour:
   ttkey: 0
   close: 0
   ttdoor: {fileID: 1284991108}
+=======
+>>>>>>> parent of e920fc9... implementing ttKey(underprogress)
 =======
 >>>>>>> parent of e920fc9... implementing ttKey(underprogress)
 --- !u!1 &240015898
@@ -738,6 +741,9 @@ EdgeCollider2D:
   - {x: 0.9709542, y: 0.61909753}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of e920fc9... implementing ttKey(underprogress)
 =======
 >>>>>>> parent of e920fc9... implementing ttKey(underprogress)
 --- !u!1 &904172039
@@ -813,6 +819,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &983127273
 GameObject:
@@ -893,6 +900,8 @@ SpriteRenderer:
 >>>>>>> e920fc9145eda183c50da69e8993b3c284c8ef48
 =======
 >>>>>>> parent of e920fc9... implementing ttKey(underprogress)
+=======
+>>>>>>> parent of e920fc9... implementing ttKey(underprogress)
 --- !u!1 &1284991108
 GameObject:
   m_ObjectHideFlags: 0
@@ -964,6 +973,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &1284991112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -979,6 +989,8 @@ MonoBehaviour:
   ttkey: 0
   close: 0
   ttdoor: {fileID: 0}
+=======
+>>>>>>> parent of e920fc9... implementing ttKey(underprogress)
 =======
 >>>>>>> parent of e920fc9... implementing ttKey(underprogress)
 --- !u!1 &1461243686
