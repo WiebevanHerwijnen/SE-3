@@ -7,7 +7,6 @@ public class Door : MonoBehaviour {
     public GameObject delft;
     public GameObject Deur2;
     public bool entered;
-   
 
 
 	// Use this for initialization
