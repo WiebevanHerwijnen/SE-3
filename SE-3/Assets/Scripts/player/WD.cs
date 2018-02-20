@@ -23,25 +23,25 @@ public class WD : MonoBehaviour {
 	void Update () {
         #region 
         //makes de sprite of the player change when a certain button is pressed
-        if (Input.GetKeyDown(KeyCode.A)) 
+		if (Input.GetKeyDown(KeyCode.A)||Input.GetKeyDown(KeyCode.LeftArrow)) 
         {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = A;
             a = true;
 
         }
-        if (Input.GetKeyDown(KeyCode.W))
+		if (Input.GetKeyDown(KeyCode.W)||Input.GetKeyDown(KeyCode.UpArrow))
         {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = W;
             w = true;
 
         }
-        if (Input.GetKeyDown(KeyCode.S))
+		if (Input.GetKeyDown(KeyCode.S)||Input.GetKeyDown(KeyCode.DownArrow))
         {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = S;
             s = true;
 
         }
-        if (Input.GetKeyDown(KeyCode.D))
+		if (Input.GetKeyDown(KeyCode.D)||Input.GetKeyDown(KeyCode.RightArrow))
         {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = D;
             d = true;
