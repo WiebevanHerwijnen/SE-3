@@ -113,134 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
---- !u!1 &144318866
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 144318868}
-  - component: {fileID: 144318867}
-  - component: {fileID: 144318869}
-  - component: {fileID: 144318870}
-  m_Layer: 0
-  m_Name: key
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &144318867
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 144318866}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 234046959
-  m_SortingLayer: 3
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c65ae05db7796e747b22204099a65802, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.14, y: 0.06}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
---- !u!4 &144318868
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 144318866}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.6939, y: -4.8233, z: 0}
-  m_LocalScale: {x: 0.24021015, y: 0.26809186, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &144318869
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 144318866}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.019770522, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.14, y: 0.06}
-    newSize: {x: 0.14, y: 0.06}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.1795409, y: 0.06}
-  m_EdgeRadius: 0
---- !u!114 &144318870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 144318866}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19ff627d79366f140aff30bfa17f8515, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: {fileID: 144318867}
-  ttkey: 0
-  close: 0
-  ttdoor: {fileID: 1284991108}
-=======
->>>>>>> parent of e920fc9... implementing ttKey(underprogress)
-=======
->>>>>>> parent of e920fc9... implementing ttKey(underprogress)
-=======
->>>>>>> parent of e920fc9... implementing ttKey(underprogress)
->>>>>>> 4cb839c276e8c141f41ef97dbd2851148bdbdb64
 --- !u!1 &240015898
 GameObject:
   m_ObjectHideFlags: 0
@@ -328,8 +200,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-=======
->>>>>>> parent of 164996f... Merge branch 'master' of https://github.com/WiebevanHerwijnen/SE-3
 --- !u!1 &394954460 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1915625907346732, guid: b831c8ea2f1abff4a8aae07290d2a2a4,
@@ -745,19 +615,6 @@ EdgeCollider2D:
   - {x: 1.1600126, y: -0.6598269}
   - {x: 0.970042, y: -0.6603494}
   - {x: 0.9709542, y: 0.61909753}
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of e920fc9... implementing ttKey(underprogress)
-=======
->>>>>>> parent of e920fc9... implementing ttKey(underprogress)
-=======
->>>>>>> parent of e920fc9... implementing ttKey(underprogress)
->>>>>>> 4cb839c276e8c141f41ef97dbd2851148bdbdb64
 --- !u!1 &904172039
 GameObject:
   m_ObjectHideFlags: 0
@@ -831,9 +688,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 --- !u!1 &983127273
 GameObject:
   m_ObjectHideFlags: 0
@@ -909,17 +763,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
-<<<<<<< HEAD
-=======
-=======
->>>>>>> e920fc9145eda183c50da69e8993b3c284c8ef48
-=======
->>>>>>> parent of e920fc9... implementing ttKey(underprogress)
-=======
->>>>>>> parent of e920fc9... implementing ttKey(underprogress)
-=======
->>>>>>> parent of e920fc9... implementing ttKey(underprogress)
->>>>>>> 4cb839c276e8c141f41ef97dbd2851148bdbdb64
 --- !u!1 &1284991108
 GameObject:
   m_ObjectHideFlags: 0
@@ -989,34 +832,6 @@ Transform:
   m_Father: {fileID: 1944175841}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
---- !u!114 &1284991112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1284991108}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19ff627d79366f140aff30bfa17f8515, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: {fileID: 0}
-  ttkey: 0
-  close: 0
-  ttdoor: {fileID: 0}
-=======
->>>>>>> parent of e920fc9... implementing ttKey(underprogress)
-=======
->>>>>>> parent of e920fc9... implementing ttKey(underprogress)
-=======
->>>>>>> parent of e920fc9... implementing ttKey(underprogress)
->>>>>>> 4cb839c276e8c141f41ef97dbd2851148bdbdb64
 --- !u!1 &1461243686
 GameObject:
   m_ObjectHideFlags: 0
@@ -1107,8 +922,6 @@ MonoBehaviour:
   textObject: {fileID: 240015898}
   sprite: {fileID: 983127273}
   sleutel: {fileID: 419516845}
-=======
->>>>>>> parent of 164996f... Merge branch 'master' of https://github.com/WiebevanHerwijnen/SE-3
 --- !u!1001 &1482030593
 Prefab:
   m_ObjectHideFlags: 0
