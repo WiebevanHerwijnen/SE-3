@@ -22,10 +22,12 @@ public class Door : MonoBehaviour {
 
         Vector2 DeurLocatie2 = Deur2.transform.position;//bekijkt waar de locatie van de tweede deur is
 
-		if (Input.GetKeyDown(KeyCode.E) && entered == true && locked == false)
-        {
-            delft.transform.position = DeurLocatie2;
-        }
+		if (Input.GetKeyDown (KeyCode.E) && entered == true && locked == false) {
+			delft.transform.position = DeurLocatie2;
+		} else if (Input.GetKeyDown (KeyCode.E) && entered == true && locked == true) {
+			//Melding dat deur op slot is
+			Debug.Log("Op slot");
+		}
        
     }
 
