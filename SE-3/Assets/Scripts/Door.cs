@@ -28,6 +28,8 @@ public class Door : MonoBehaviour {
 			//Melding dat deur op slot is
 			Debug.Log("Op slot");
 		}
+
+
        
     }
 
