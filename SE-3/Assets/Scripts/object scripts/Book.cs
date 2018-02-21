@@ -7,11 +7,13 @@ public class Book : MonoBehaviour {
     private bool nearby;
     private bool opened = false;
     private BoxCollider2D bx2d;
+    public GameObject book;
 
 	// Use this for initialization
 	void Start () {
 
         bx2d = GetComponent<BoxCollider2D>();
+        book.SetActive(false);
 
 	}
 	
@@ -35,11 +37,13 @@ public class Book : MonoBehaviour {
     void Openbook()
     {
         Debug.Log("ja");
+        book.SetActive(true);
     }
 
     void Closebook()
     {
         Debug.Log("nee");
+        book.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
