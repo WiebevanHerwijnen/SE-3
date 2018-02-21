@@ -8,6 +8,9 @@ public class Book : MonoBehaviour {
     private bool opened = false;
     private BoxCollider2D bx2d;
     public GameObject book;
+    private int Page = 1;
+    public GameObject Pagina1;
+    public GameObject Pagina2;
 
 	// Use this for initialization
 	void Start () {
@@ -31,8 +34,32 @@ public class Book : MonoBehaviour {
             Closebook();
         }
 
+        if (Input.GetKeyDown(KeyCode.RightArrow) && opened == true && nearby && bx2d)
+        {
+            Page += 1;
+            UpdateBook();
+        }
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && opened == true && nearby && bx2d)
+        {
+            Page -= 1;
+            UpdateBook();
+        }
 
-	}
+    }
+
+    void UpdateBook()
+    {
+        if (Page == 1)
+        {
+            Pagina1.SetActive(true);
+            Pagina2.SetActive(false);
+        }
+        else if (Page == 2)
+        {
+            Pagina1.SetActive(false);
+            Pagina2.SetActive(true);
+        }
+    }
 
     void Openbook()
     {
