@@ -7,6 +7,7 @@ public class Door : MonoBehaviour {
     public GameObject delft;
     public GameObject Deur2;
     public bool entered;
+	public bool locked;
   
 
 
@@ -22,7 +23,7 @@ public class Door : MonoBehaviour {
 
         Vector2 DeurLocatie2 = Deur2.transform.position;
 
-       if (Input.GetKeyDown(KeyCode.E) && entered == true)
+		if (Input.GetKeyDown(KeyCode.E) && entered == true && locked == false)
         {
             delft.transform.position = DeurLocatie2;
            

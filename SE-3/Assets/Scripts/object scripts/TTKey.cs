@@ -34,4 +34,9 @@ public class TTKey : MonoBehaviour {
     {
         nearby = true;
     }
+	private void OnTriggerExit2D(Collider2D collision)
+	{
+		nearby = false;
+	}
+
 }
