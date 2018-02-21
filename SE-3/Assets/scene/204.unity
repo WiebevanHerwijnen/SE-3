@@ -425,6 +425,7 @@ MonoBehaviour:
   delft: {fileID: 394954460}
   Deur2: {fileID: 1284991108}
   entered: 0
+  locked: 0
 --- !u!1 &825035900
 GameObject:
   m_ObjectHideFlags: 0
@@ -722,6 +723,7 @@ MonoBehaviour:
   delft: {fileID: 394954460}
   Deur2: {fileID: 817997139}
   entered: 0
+  locked: 1
 --- !u!61 &1284991110
 BoxCollider2D:
   m_ObjectHideFlags: 0
