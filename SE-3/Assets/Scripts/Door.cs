@@ -27,7 +27,7 @@ public class Door : MonoBehaviour {
 			AudioSource audio = delft.GetComponent<AudioSource>();
 			audio.Play();
 		} else if (Input.GetKeyDown (KeyCode.E) && entered == true && locked == true) {
-			//Melding dat deur op slot is
+			delft.GetComponent<Interaction> ().noKey ();
 			Debug.Log("Op slot");
 		}
 
