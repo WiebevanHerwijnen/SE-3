@@ -158,6 +158,7 @@ MonoBehaviour:
   Deur2: {fileID: 1284991108}
   key: {fileID: 0}
   entered: 0
+  fake_door: 1
   locked: 1
 --- !u!61 &163641582
 BoxCollider2D:
@@ -674,6 +675,7 @@ MonoBehaviour:
   Deur2: {fileID: 894604197}
   key: {fileID: 896687878}
   entered: 0
+  fake_door: 0
   locked: 1
 --- !u!61 &488103300
 BoxCollider2D:
@@ -957,6 +959,7 @@ MonoBehaviour:
   Deur2: {fileID: 1284991108}
   key: {fileID: 0}
   entered: 0
+  fake_door: 1
   locked: 1
 --- !u!61 &752808186
 BoxCollider2D:
@@ -1053,6 +1056,7 @@ MonoBehaviour:
   Deur2: {fileID: 1284991108}
   key: {fileID: 0}
   entered: 0
+  fake_door: 0
   locked: 0
 --- !u!1 &825035900
 GameObject:
@@ -1299,6 +1303,7 @@ MonoBehaviour:
   Deur2: {fileID: 488103297}
   key: {fileID: 0}
   entered: 0
+  fake_door: 0
   locked: 0
 --- !u!61 &894604200
 BoxCollider2D:
@@ -1592,6 +1597,7 @@ MonoBehaviour:
   Deur2: {fileID: 1284991108}
   key: {fileID: 0}
   entered: 0
+  fake_door: 1
   locked: 1
 --- !u!61 &1184220399
 BoxCollider2D:
@@ -1811,6 +1817,7 @@ MonoBehaviour:
   Deur2: {fileID: 817997139}
   key: {fileID: 1600510919}
   entered: 0
+  fake_door: 0
   locked: 1
 --- !u!61 &1284991110
 BoxCollider2D:
@@ -2419,6 +2426,7 @@ MonoBehaviour:
   Deur2: {fileID: 1284991108}
   key: {fileID: 0}
   entered: 0
+  fake_door: 1
   locked: 1
 --- !u!61 &1524237637
 BoxCollider2D:
@@ -3061,6 +3069,7 @@ MonoBehaviour:
   Deur2: {fileID: 1284991108}
   key: {fileID: 0}
   entered: 0
+  fake_door: 1
   locked: 1
 --- !u!61 &1912406310
 BoxCollider2D:
@@ -3174,6 +3183,7 @@ MonoBehaviour:
   Deur2: {fileID: 1284991108}
   key: {fileID: 0}
   entered: 0
+  fake_door: 1
   locked: 1
 --- !u!61 &2015819659
 BoxCollider2D:

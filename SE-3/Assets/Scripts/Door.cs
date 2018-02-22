@@ -8,6 +8,7 @@ public class Door : MonoBehaviour {
     public GameObject Deur2;
 	public GameObject key;
     public bool entered;
+	public bool fake_door;
 	public bool locked;
 
 	// Use this for initialization
@@ -38,7 +39,7 @@ public class Door : MonoBehaviour {
     private void OnTriggerEnter2D (Collider2D other)
     {
         entered = true;
-		if (locked) {
+		if (locked && !fake_door) {
 			if (key.GetComponent<TTKey> ().pickedup) {
 				locked = false;
 			}
