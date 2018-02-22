@@ -7,15 +7,18 @@ public class Interaction : MonoBehaviour {
 	public SpriteRenderer nokeyrenderer;
     public GameObject pop_up;
     public SpriteRenderer pop;
+    public GameObject mrobject;
 
     // Use this for initialization
     void Start()
     {
         buttonrenderer.enabled = false;
 		nokeyrenderer.enabled = false;
-        pop_up = GameObject.Find("pickedup_key");
+        pop_up = GameObject.Find("text popup");
         pop = pop_up.GetComponent<SpriteRenderer>();
         pop.enabled = false;
+      
+        
     }
     
     private void OnTriggerEnter2D(Collider2D other)
@@ -42,8 +45,11 @@ public class Interaction : MonoBehaviour {
 		nokeyrenderer.enabled = false;
         if (Input.GetKeyDown(KeyCode.E))
         {
-            pop.enabled = true;
+            pop.enabled = true;           
             Invoke("Hold_Popup", 1);
+            mrobject.GetComponent<PopupManager>().EnableMeshRendererKeyPickUp();
+
+
 
 
         }
