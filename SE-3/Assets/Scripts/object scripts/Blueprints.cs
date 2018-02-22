@@ -7,6 +7,7 @@ public class Blueprints : MonoBehaviour {
 	private SpriteRenderer sr;
 	public SpriteRenderer sr_object;
 	private BoxCollider2D bx2d;
+	public BoxCollider2D bx2d_object;
 	public bool pickedup;
 
 	// Use this for initialization
@@ -23,6 +24,7 @@ public class Blueprints : MonoBehaviour {
 		{
 			sr.enabled = false;
 			sr_object.enabled = true;
+			bx2d_object.enabled = true;
 			Destroy(bx2d);
 			pickedup = true;       
 		}
