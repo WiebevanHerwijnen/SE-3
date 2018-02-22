@@ -6,7 +6,7 @@ public class Door : MonoBehaviour {
 
     public GameObject delft;
     public GameObject Deur2;
-	public SpriteRenderer srkey;
+	public GameObject key;
     public bool entered;
 	public bool locked;
 
@@ -38,9 +38,10 @@ public class Door : MonoBehaviour {
     private void OnTriggerEnter2D (Collider2D other)
     {
         entered = true;
-		if(srkey.enabled == false)
-		{
-			locked = false;
+		if (locked) {
+			if (key.GetComponent<TTKey> ().pickedup) {
+				locked = false;
+			}
 		}
     }
 
