@@ -47,7 +47,7 @@ public class Interaction : MonoBehaviour {
         {
             pop.enabled = true;           
             Invoke("Hold_Popup", 1);
-            mrobject.GetComponent<PopupManager>().EnableMeshRendererKeyPickUp();
+            mrobject.GetComponent<PopupManager>().EnableMeshRendererKeyPickUp();// called the functie die de meshrenderer zichtbaarmaakt(werkt nog niet)
 
 
 
