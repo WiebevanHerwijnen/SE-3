@@ -13,7 +13,7 @@ public class Interaction : MonoBehaviour {
     {
         buttonrenderer.enabled = false;
 		nokeyrenderer.enabled = false;
-        pop_up = GameObject.Find("text popup");
+        pop_up = GameObject.Find("pickedup_key");
         pop = pop_up.GetComponent<SpriteRenderer>();
         pop.enabled = false;
     }
@@ -22,6 +22,7 @@ public class Interaction : MonoBehaviour {
     {
         //Debug.Log("werkt");
         buttonrenderer.enabled = true;
+        
 
     }
 	public void noKey() 
@@ -42,10 +43,11 @@ public class Interaction : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.E))
         {
             pop.enabled = true;
-            Invoke("Hold_Popup", 2);
-            
-           
+            Invoke("Hold_Popup", 1);
+
+
         }
+
     }
 
 }
