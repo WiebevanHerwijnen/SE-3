@@ -3537,6 +3537,26 @@ Prefab:
       propertyPath: m_SortingLayer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 61810675467123584, guid: d78d7a7bf3277d34f87afc761aa9ef6c,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: -0.025402647
+      objectReference: {fileID: 0}
+    - target: {fileID: 61810675467123584, guid: d78d7a7bf3277d34f87afc761aa9ef6c,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 61810675467123584, guid: d78d7a7bf3277d34f87afc761aa9ef6c,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 61810675467123584, guid: d78d7a7bf3277d34f87afc761aa9ef6c,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.110805295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d78d7a7bf3277d34f87afc761aa9ef6c, type: 2}
   m_IsPrefabParent: 0
