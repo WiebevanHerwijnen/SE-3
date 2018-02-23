@@ -59,3 +59,9 @@ TagManager:
   - name: buttons
     uniqueID: 488356271
     locked: 0
+  - name: inventory
+    uniqueID: 4274521369
+    locked: 0
+  - name: inventory item
+    uniqueID: 549600573
+    locked: 0
