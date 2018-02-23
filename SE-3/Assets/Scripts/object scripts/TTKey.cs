@@ -28,7 +28,7 @@ public class TTKey : MonoBehaviour {
             Destroy(bx2d);
             pickedup = true;
 			//Verander de text van de pop-up
-			pop_up.GetComponent<TextMesh>().text = "Opgepakt: Blueprint";
+			pop_up.GetComponent<TextMesh>().text = "Opgepakt: Sleutel";
         }
      
     }
