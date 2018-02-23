@@ -36,7 +36,7 @@ public class Interaction : MonoBehaviour {
     private void Hold_Popup()
     {
         pop.enabled = false;
-
+		mrobject.GetComponent<PopupManager>().DisableMeshRendererKeyPickUp();// called the functie die de meshrenderer onzichtbaarmaakt(werkt nog niet)
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -48,8 +48,6 @@ public class Interaction : MonoBehaviour {
             pop.enabled = true;           
             Invoke("Hold_Popup", 1);
             mrobject.GetComponent<PopupManager>().EnableMeshRendererKeyPickUp();// called the functie die de meshrenderer zichtbaarmaakt(werkt nog niet)
-
-
 
 
         }

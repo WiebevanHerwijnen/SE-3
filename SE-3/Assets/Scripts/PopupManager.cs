@@ -17,4 +17,8 @@ public class PopupManager : MonoBehaviour {
     {
         mr.enabled = true;
     }
+	public void DisableMeshRendererKeyPickUp() // maakt de meshrenderer zichtbaar
+	{
+		mr.enabled = false;
+	}
 }
