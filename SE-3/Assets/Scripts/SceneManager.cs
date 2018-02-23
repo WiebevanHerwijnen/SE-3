@@ -8,4 +8,18 @@ using UnityEngine.SceneManagement;
 public class SceneManager : MonoBehaviour {
 
 
+    void Start(){
+
+    }
+
+    void Update(){
+        
+
+
+    }
+
+    public void StartButtonNextScene()
+    {
+ //       SceneManager.LoadLevel("204");
+    }
 }
