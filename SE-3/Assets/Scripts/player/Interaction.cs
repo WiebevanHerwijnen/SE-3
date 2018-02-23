@@ -8,6 +8,7 @@ public class Interaction : MonoBehaviour {
     public GameObject pop_up;
     public SpriteRenderer pop;
     public GameObject mrobject;
+    public GameObject kast;
 
     // Use this for initialization
     void Start()
@@ -51,7 +52,7 @@ public class Interaction : MonoBehaviour {
 
 
         }
-
+        
     }
 
 }
