@@ -40,7 +40,7 @@ public class KastScript : MonoBehaviour {
     }
     public void OnTriggerExit2D(Collider2D collision)
     {
-        nearby = true;
+        nearby = false;
         kast.transform.position = new Vector2(-10, -10);
         Ecount = 0f;
     }
