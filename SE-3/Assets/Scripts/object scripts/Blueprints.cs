@@ -9,6 +9,8 @@ public class Blueprints : MonoBehaviour {
 	private BoxCollider2D bx2d;
 	public BoxCollider2D bx2d_object;
 	public bool pickedup;
+	//Maak game object om pop-up te selecteren
+	public GameObject pop_up;
 
 	// Use this for initialization
 	void Start () {
@@ -16,6 +18,8 @@ public class Blueprints : MonoBehaviour {
 		pickedup = false;
 		sr = GetComponent<SpriteRenderer>();
 		bx2d = GetComponent<BoxCollider2D>();
+		//Zoek de pop-up meshrenderer om de text aan te kunnen passen
+		pop_up = GameObject.Find("popup_meshrenderer");
 	}
 
 	// Update is called once per frame
@@ -26,7 +30,9 @@ public class Blueprints : MonoBehaviour {
 			sr_object.enabled = true;
 			bx2d_object.enabled = true;
 			Destroy(bx2d);
-			pickedup = true;       
+			pickedup = true;   
+			//Verander de text van de pop-up
+			pop_up.GetComponent<TextMesh>().text = "Opgepakt: Blueprint";
 		}
 
 	}
