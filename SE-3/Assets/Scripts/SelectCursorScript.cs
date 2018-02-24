@@ -10,6 +10,7 @@ public class SelectCursorScript : MonoBehaviour {
     public SpriteRenderer item2;
     public int itemcounter;
     public bool nearby;
+    
 
 
     // Use this for initialization
@@ -18,29 +19,33 @@ public class SelectCursorScript : MonoBehaviour {
         selectcursor.transform.position = item1.transform.position;
         itemcounter = 1;
         nearby = false;
-        //nearby == true
+        
 
 
     }
 
     // Update is called once per frame
     void Update() {
-        if (Input.GetKeyDown(KeyCode.T) && itemcounter == 2)
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && itemcounter == 2)
         {
-            selectcursor.GetComponent<SelectCursorScript>().PickUpItem();
+            
             itemcounter--;
             selectcursor.transform.position = item1.transform.position;
-
+          
         }
-        if (Input.GetKeyDown(KeyCode.P) && itemcounter == 1)
+        if (Input.GetKeyDown(KeyCode.RightArrow) && itemcounter == 1)
         {
             selectcursor.transform.position = item2.transform.position;
-            itemcounter++;
+            itemcounter++;                                               
         }
     }
-   public void PickUpItem()
+   public void PickUpItem1()
     {
-       // item1.enabled = false; 
+       item1.enabled = false; 
+    }
+    public void PickUpItem2()
+    {
+         item2.enabled = false; 
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
