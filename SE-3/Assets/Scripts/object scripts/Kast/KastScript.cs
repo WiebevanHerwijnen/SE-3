@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class KastScript : MonoBehaviour {
     public GameObject kast;
+    public GameObject emptykast;
     public GameObject locatiedelft;
     public BoxCollider2D colliderkast;
    
@@ -21,7 +22,7 @@ public class KastScript : MonoBehaviour {
     {
         if (nearby == true && Input.GetKeyDown(KeyCode.E))
         {
-            kast.transform.position = locatiedelft.transform.position;
+            emptykast.GetComponent<KastScript>().MoveKast();  
             
         }
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -34,15 +35,20 @@ public class KastScript : MonoBehaviour {
 
     }
 
-    public void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)//checked of Delft dichtbij genoeg is om de kast te openen
     {
         nearby = true;
     }
-    public void OnTriggerExit2D(Collider2D collision)
+    public void OnTriggerExit2D(Collider2D collision)//
     {
         nearby = false;
         kast.transform.position = new Vector2(-10, -10);
      
+    }
+    public void MoveKast()// verplaatst de KastInventory naar Delft
+    {
+        kast.transform.position = locatiedelft.transform.position;
+        
     }
 
 
