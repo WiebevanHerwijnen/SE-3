@@ -6,7 +6,7 @@ public class KastScript : MonoBehaviour {
     public GameObject kast;
     public GameObject locatiedelft;
     public BoxCollider2D colliderkast;
-    public float Ecount;
+   
     public bool nearby;
    
    
@@ -22,12 +22,12 @@ public class KastScript : MonoBehaviour {
         if (nearby == true && Input.GetKeyDown(KeyCode.E))
         {
             kast.transform.position = locatiedelft.transform.position;
-            Ecount++;
+            
         }
-        if (Input.GetKeyDown(KeyCode.E) && Ecount == 2f)
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             kast.transform.position = new Vector2(-10, -10);
-            Ecount = 0f;
+            
         }
 
 
@@ -42,7 +42,7 @@ public class KastScript : MonoBehaviour {
     {
         nearby = false;
         kast.transform.position = new Vector2(-10, -10);
-        Ecount = 0f;
+     
     }
 
 
