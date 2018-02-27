@@ -24,13 +24,22 @@ public class TTKey : MonoBehaviour {
 	void Update () {
         if (Input.GetKeyDown(KeyCode.E) && nearby == true && bx2d)
         {
-            sr.enabled = false;
-            Destroy(bx2d);
-            pickedup = true;
-			//Verander de text van de pop-up
-			pop_up.GetComponent<TextMesh>().text = "Opgepakt: Sleutel";
+            // sr.enabled = false;
+            // Destroy(bx2d);
+            // pickedup = true;
+            //Verander de text van de pop-up
+            //pop_up.GetComponent<TextMesh>().text = "Opgepakt: Sleutel";
+            PickedUpKey();
         }
      
+    }
+    public void PickedUpKey()
+    {
+        sr.enabled = false;
+        Destroy(bx2d);
+        pickedup = true;
+        //Verander de text van de pop-up
+        pop_up.GetComponent<TextMesh>().text = "Opgepakt: Sleutel";
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
