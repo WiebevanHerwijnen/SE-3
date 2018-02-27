@@ -16,8 +16,7 @@ public class SelectCursorScript : MonoBehaviour {
     // Use this for initialization
     void Start() {
         selectcursor = GameObject.Find("select cursor");
-        selectcursor.transform.position = item1.transform.position;
-        itemcounter = 1;
+        itemcounter = 0;
         nearby = false;
         
 
@@ -33,6 +32,10 @@ public class SelectCursorScript : MonoBehaviour {
             selectcursor.transform.position = item1.transform.position;
           
         }
+        if(Input.GetKeyDown(KeyCode.E) && itemcounter == 2)
+        {
+            PickUpItem2();
+        }
         if (Input.GetKeyDown(KeyCode.RightArrow) && itemcounter == 1)
         {
             selectcursor.transform.position = item2.transform.position;
@@ -47,12 +50,13 @@ public class SelectCursorScript : MonoBehaviour {
     {
          item2.enabled = false; 
     }
-    public void OnTriggerEnter2D(Collider2D collision)
+    public void ItemCounterUp()
     {
-        nearby = true;
+        itemcounter++;
     }
-    public void OnTriggerExit2D(Collider2D collision)
+    public void ItemCounterDown()
     {
-        nearby = false;
+        itemcounter--;
     }
+
 }

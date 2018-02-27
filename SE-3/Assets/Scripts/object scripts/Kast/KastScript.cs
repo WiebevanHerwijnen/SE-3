@@ -6,6 +6,7 @@ public class KastScript : MonoBehaviour {
     public GameObject kast;
     public GameObject emptykast;
     public GameObject locatiedelft;
+    public GameObject cursor;
     public BoxCollider2D colliderkast;
    
     public bool nearby;
@@ -15,7 +16,9 @@ public class KastScript : MonoBehaviour {
 
     private void Start()
     {        
-        kast.transform.position = new Vector2(-10, -10);              
+        kast.transform.position = new Vector2(-10, -10);
+        cursor = GameObject.Find("Cursor");
+
     }
 
     private void Update()
@@ -38,12 +41,15 @@ public class KastScript : MonoBehaviour {
     public void OnTriggerEnter2D(Collider2D collision)//checked of Delft dichtbij genoeg is om de kast te openen
     {
         nearby = true;
+        cursor.GetComponent<SelectCursorScript>().ItemCounterUp();
+
     }
     public void OnTriggerExit2D(Collider2D collision)//
     {
         nearby = false;
         kast.transform.position = new Vector2(-10, -10);
-     
+        cursor.GetComponent<SelectCursorScript>().ItemCounterDown();
+
     }
     public void MoveKast()// verplaatst de KastInventory naar Delft
     {

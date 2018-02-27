@@ -63,13 +63,11 @@ public class Book : MonoBehaviour {
 
     void Openbook()
     {
-        Debug.Log("ja");
         book.SetActive(true);
     }
 
     void Closebook()
     {
-        Debug.Log("nee");
         book.SetActive(false);
     }
 
