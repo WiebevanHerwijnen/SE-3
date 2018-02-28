@@ -26,7 +26,7 @@ public class KastScript : MonoBehaviour {
         if (nearby == true && Input.GetKeyDown(KeyCode.E))
         {
             emptykast.GetComponent<KastScript>().MoveKast();
-            cursor.GetComponent<SelectCursorScript>().ItemCounterUp();
+            cursor.GetComponent<SelectCursorScript>().itemcounter = 2;
 
         }
         if (Input.GetKeyDown(KeyCode.Escape))
