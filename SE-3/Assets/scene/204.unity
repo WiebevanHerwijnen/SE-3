@@ -640,8 +640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0038f8d9b3f860e4b8bcf381e2da8135, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meshrenderer: {fileID: 0}
-  mr: {fileID: 0}
+  popupbard: {fileID: 0}
 --- !u!1 &419516845
 GameObject:
   m_ObjectHideFlags: 0
@@ -1556,10 +1555,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   kast: {fileID: 1622915947}
   Lildelft: {fileID: 394954460}
+  popupboard: {fileID: 1525924644}
   item1: {fileID: 1135924118}
   item2: {fileID: 18839366}
   itemcounter: 0
   nearby: 0
+  pickedup1: 0
+  pickedup2: 0
+  selected: 0
+  opened: 0
 --- !u!1 &983127273
 GameObject:
   m_ObjectHideFlags: 0
@@ -2928,8 +2932,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0038f8d9b3f860e4b8bcf381e2da8135, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meshrenderer: {fileID: 0}
-  mr: {fileID: 0}
+  popupbard: {fileID: 1512048926}
 --- !u!210 &1525924647
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -3066,6 +3069,8 @@ MonoBehaviour:
   locatiedelft: {fileID: 394954460}
   cursor: {fileID: 979773983}
   colliderkast: {fileID: 1622915950}
+  gebruikt: 0
+  opened: 0
   nearby: 0
 --- !u!61 &1622915950
 BoxCollider2D:

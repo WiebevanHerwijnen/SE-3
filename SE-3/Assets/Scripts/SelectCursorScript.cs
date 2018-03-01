@@ -6,6 +6,7 @@ public class SelectCursorScript : MonoBehaviour {
     private GameObject cursor;
     public GameObject kast;
     public GameObject Lildelft;
+    public GameObject popupboard;
     public SpriteRenderer item1;
     public SpriteRenderer item2;
     public int itemcounter;
@@ -14,14 +15,16 @@ public class SelectCursorScript : MonoBehaviour {
     public bool pickedup2;
     public int selected = 0;
     public bool opened = false;
+
     
 
 
     // Use this for initialization
     void Start() {
-        cursor = GameObject.Find("Cursor");
+        cursor = GameObject.Find("Cursor");       
         itemcounter = 0;
         nearby = false;
+
         
 
 
@@ -42,11 +45,13 @@ public class SelectCursorScript : MonoBehaviour {
         if(Input.GetKeyDown(KeyCode.E) && itemcounter == 3 && selected == 1 && opened == true)
         {
             PickUpItem2();
+            popupboard.GetComponent<PopupManager>().PickedUpPlasticBar();
         }
-        //akt item 1 op
+        //pakt item 1 op
         if (Input.GetKeyDown(KeyCode.E) && itemcounter == 2 && selected == 0 && opened == true)
         {
             PickUpItem1();
+            //popupboard.GetComponent<PopupManager>().PickedUpPlasticBar();
             
         }
         //verplaatst de cursor naar het tweede item
