@@ -8,8 +8,12 @@ public class KastScript : MonoBehaviour {
     public GameObject locatiedelft;
     public GameObject cursor;
     public BoxCollider2D colliderkast;
+    public bool gebruikt;
+    public bool opened;
    
     public bool nearby;
+    
+
    
    
     
@@ -18,20 +22,29 @@ public class KastScript : MonoBehaviour {
     {        
         kast.transform.position = new Vector2(-10, -10);
         cursor = GameObject.Find("Cursor");
+        opened = cursor.GetComponent<SelectCursorScript>().opened;
 
     }
 
     private void Update()
     {
-        if (nearby == true && Input.GetKeyDown(KeyCode.E))
+        //opent de kast 
+        if (nearby == true && Input.GetKeyDown(KeyCode.E) && opened == false)
         {
             emptykast.GetComponent<KastScript>().MoveKast();
-            cursor.GetComponent<SelectCursorScript>().itemcounter = 2;
+            if (gebruikt == false)
+            {
+                cursor.GetComponent<SelectCursorScript>().itemcounter = 2;
+                gebruikt = true;
+            }
+            cursor.GetComponent<SelectCursorScript>().Opening();
 
         }
+        // doet de kast dicht
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             kast.transform.position = new Vector2(-10, -10);
+            opened = false;
             
         }
 
@@ -50,7 +63,7 @@ public class KastScript : MonoBehaviour {
         nearby = false;
         kast.transform.position = new Vector2(-10, -10);
         cursor.GetComponent<SelectCursorScript>().ItemCounterDown();
-
+        cursor.GetComponent<SelectCursorScript>().opened = false;
     }
     public void MoveKast()// verplaatst de KastInventory naar Delft
     {

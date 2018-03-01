@@ -13,7 +13,7 @@ public class SelectCursorScript : MonoBehaviour {
     public bool pickedup1;
     public bool pickedup2;
     public int selected = 0;
-    public bool opened;
+    public bool opened = false;
     
 
 
@@ -29,6 +29,7 @@ public class SelectCursorScript : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+        //verplaatst de cursor naar het eerste voorwerp
         if (Input.GetKeyDown(KeyCode.LeftArrow) && itemcounter == 3)
         {
             
@@ -37,42 +38,47 @@ public class SelectCursorScript : MonoBehaviour {
             selected = 0;
           
         }
-        if(Input.GetKeyDown(KeyCode.E) && itemcounter == 3 && selected == 5)
+        //pakt item 2 op
+        if(Input.GetKeyDown(KeyCode.E) && itemcounter == 3 && selected == 1 && opened == true)
         {
             PickUpItem2();
         }
-        if (Input.GetKeyDown(KeyCode.E) && itemcounter == 2 && selected == 0)
+        //akt item 1 op
+        if (Input.GetKeyDown(KeyCode.E) && itemcounter == 2 && selected == 0 && opened == true)
         {
             PickUpItem1();
-            Debug.Log("test");
+            
         }
+        //verplaatst de cursor naar het tweede item
         if (Input.GetKeyDown(KeyCode.RightArrow) && itemcounter == 2)
-        {
-            cursor.transform.position = item2.transform.position;
-            itemcounter++;
-            selected = 5;
-        }
-    }
-   public void PickUpItem1()
-    {
-       item1.enabled = false;
-        Debug.Log("1");
-        
-        if(item2.enabled == true)
         {
             cursor.transform.position = item2.transform.position;
             itemcounter++;
             selected = 1;
         }
+    }
+    // functie voor het oppakken van item 1
+   public void PickUpItem1()
+    {
+       item1.enabled = false;
+        
+        
+        if(item2.enabled == true)
+        {
+            cursor.transform.position = item2.transform.position;
+            itemcounter = 3;
+            selected = 1;
+        }
         else if (item2.enabled == false)
         {
-            cursor.transform.position = new Vector2(-10, -10);
+            cursor.transform.position = new Vector2(-11, -11);
         }
     }
+    //functie voor het oppakken van item 2
     public void PickUpItem2()
     {
          item2.enabled = false;
-        Debug.Log("2");
+        
         
         if (item1.enabled == true)
         {
@@ -82,7 +88,7 @@ public class SelectCursorScript : MonoBehaviour {
         }
         else if (item1.enabled == false)
         {
-            cursor.transform.position = new Vector2(-10, -10);
+            cursor.transform.position = new Vector2(-11, -11);
         }
     }
     public void ItemCounterUp()
@@ -92,6 +98,18 @@ public class SelectCursorScript : MonoBehaviour {
     public void ItemCounterDown()
     {
         itemcounter--;
+    }
+    //kijken of de kast geopend is
+    public void Opening()
+    {
+        if (opened == true)
+        {
+            opened = false;
+        }
+        if (opened == false)
+        {
+            opened = true;
+        }
     }
 
 }
