@@ -58,7 +58,7 @@ public class KastScript : MonoBehaviour {
         cursor.GetComponent<SelectCursorScript>().ItemCounterUp();
 
     }
-    public void OnTriggerExit2D(Collider2D collision)//
+    public void OnTriggerExit2D(Collider2D collision)
     {
         nearby = false;
         kast.transform.position = new Vector2(-10, -10);

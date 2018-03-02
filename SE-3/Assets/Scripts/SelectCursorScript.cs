@@ -5,7 +5,8 @@ using UnityEngine;
 public class SelectCursorScript : MonoBehaviour {
     private GameObject cursor;
     public GameObject kast;
-    public GameObject Lildelft;  
+    public GameObject Lildelft;
+    public GameObject hideboard;
     public SpriteRenderer item1;
     public SpriteRenderer item2;
     public int itemcounter;
@@ -14,9 +15,11 @@ public class SelectCursorScript : MonoBehaviour {
     public bool pickedup2;
     public int selected = 0;
     public bool opened = false;
+    public GameObject text;
 
     //scripts
-    SelectCursorScript popupboard;
+    PopupManager popupboard;
+   
 
     
 
@@ -26,7 +29,9 @@ public class SelectCursorScript : MonoBehaviour {
         cursor = GameObject.Find("Cursor");       
         itemcounter = 0;
         nearby = false;
-        popupboard = popupboard.GetComponent<SelectCursorScript>();
+        popupboard = text.GetComponent<PopupManager>();
+       
+        
 
         
 
@@ -48,14 +53,20 @@ public class SelectCursorScript : MonoBehaviour {
         if(Input.GetKeyDown(KeyCode.E) && itemcounter == 3 && selected == 1 && opened == true)
         {
             PickUpItem2();
+            popupboard.ShowBoard();
+            popupboard.PickedUpPlasticBar();
+            Invoke("HideBoard", 2);
            
         }
         //pakt item 1 op
         if (Input.GetKeyDown(KeyCode.E) && itemcounter == 2 && selected == 0 && opened == true)
         {
             PickUpItem1();
-            //popupboard.GetComponent<PopupManager>().PickedUpPlasticBar();
-            
+            popupboard.ShowBoard();
+            popupboard.PickedUpPlasticBar();
+            Invoke("HideBoard", 2);
+
+
         }
         //verplaatst de cursor naar het tweede item
         if (Input.GetKeyDown(KeyCode.RightArrow) && itemcounter == 2)
@@ -118,6 +129,10 @@ public class SelectCursorScript : MonoBehaviour {
         {
             opened = true;
         }
+    }
+     private void HideBoard()
+    {
+        popupboard.HideBoard();
     }
 
 }

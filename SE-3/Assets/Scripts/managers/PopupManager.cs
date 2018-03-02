@@ -6,11 +6,15 @@ public class PopupManager : MonoBehaviour {
     private GameObject meshrenderer;   
     private MeshRenderer mr;
     private TextMesh popuptm;
-    public GameObject board;
+    public GameObject board;  
+    public SpriteRenderer rendererboard;
+
+    
 
     private void Start()
     {
         meshrenderer = GameObject.Find("popup_meshrenderer");
+        
 
         mr = meshrenderer.GetComponent<MeshRenderer>();
         mr.enabled = false;
@@ -29,13 +33,22 @@ public class PopupManager : MonoBehaviour {
     public void PickedUpPlasticBar()
     {
         popuptm.text = "opgepakt plasticbar";
-        MakeBoardVisible();
+        ShowBoard();
 
               
     }
 
-    public void MakeBoardVisible()
+    public void ShowBoard()
     {
+        rendererboard.enabled = true;
+        mr.enabled = true;
+    }
+    public void HideBoard()
+    {
+        rendererboard.enabled = false;
+        mr.enabled = false;
+        
        
+
     }
 }
