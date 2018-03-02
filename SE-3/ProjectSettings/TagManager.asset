@@ -65,3 +65,6 @@ TagManager:
   - name: inventory item
     uniqueID: 549600573
     locked: 0
+  - name: pop-ups
+    uniqueID: 2136798995
+    locked: 0

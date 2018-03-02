@@ -5,8 +5,7 @@ using UnityEngine;
 public class SelectCursorScript : MonoBehaviour {
     private GameObject cursor;
     public GameObject kast;
-    public GameObject Lildelft;
-    public GameObject popupboard;
+    public GameObject Lildelft;  
     public SpriteRenderer item1;
     public SpriteRenderer item2;
     public int itemcounter;
@@ -16,21 +15,25 @@ public class SelectCursorScript : MonoBehaviour {
     public int selected = 0;
     public bool opened = false;
 
+    //scripts
+    SelectCursorScript popupboard;
+
     
 
 
-    // Use this for initialization
+   
     void Start() {
         cursor = GameObject.Find("Cursor");       
         itemcounter = 0;
         nearby = false;
+        popupboard = popupboard.GetComponent<SelectCursorScript>();
 
         
 
 
     }
 
-    // Update is called once per frame
+   
     void Update() {
         //verplaatst de cursor naar het eerste voorwerp
         if (Input.GetKeyDown(KeyCode.LeftArrow) && itemcounter == 3)
@@ -39,13 +42,13 @@ public class SelectCursorScript : MonoBehaviour {
             itemcounter--;
             cursor.transform.position = item1.transform.position;
             selected = 0;
-          
+            
         }
         //pakt item 2 op
         if(Input.GetKeyDown(KeyCode.E) && itemcounter == 3 && selected == 1 && opened == true)
         {
             PickUpItem2();
-            popupboard.GetComponent<PopupManager>().PickedUpPlasticBar();
+           
         }
         //pakt item 1 op
         if (Input.GetKeyDown(KeyCode.E) && itemcounter == 2 && selected == 0 && opened == true)

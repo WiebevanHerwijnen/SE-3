@@ -6,7 +6,7 @@ public class PopupManager : MonoBehaviour {
     private GameObject meshrenderer;   
     private MeshRenderer mr;
     private TextMesh popuptm;
-    public SpriteRenderer popupbard;
+    public GameObject board;
 
     private void Start()
     {
@@ -29,7 +29,13 @@ public class PopupManager : MonoBehaviour {
     public void PickedUpPlasticBar()
     {
         popuptm.text = "opgepakt plasticbar";
-        
-        
+        MakeBoardVisible();
+
+              
+    }
+
+    public void MakeBoardVisible()
+    {
+       
     }
 }

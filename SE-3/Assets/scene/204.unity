@@ -640,7 +640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0038f8d9b3f860e4b8bcf381e2da8135, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  popupbard: {fileID: 0}
+  board: {fileID: 0}
 --- !u!1 &419516845
 GameObject:
   m_ObjectHideFlags: 0
@@ -1555,7 +1555,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   kast: {fileID: 1622915947}
   Lildelft: {fileID: 394954460}
-  popupboard: {fileID: 1525924644}
   item1: {fileID: 1135924118}
   item2: {fileID: 18839366}
   itemcounter: 0
@@ -2752,6 +2751,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1512048925}
   - component: {fileID: 1512048926}
+  - component: {fileID: 1512048927}
   m_Layer: 0
   m_Name: text popup
   m_TagString: Untagged
@@ -2817,6 +2817,16 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!210 &1512048927
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1512048924}
+  m_Enabled: 1
+  m_SortingLayerID: 2136798995
+  m_SortingLayer: 9
+  m_SortingOrder: 1
 --- !u!1 &1524237634
 GameObject:
   m_ObjectHideFlags: 0
@@ -2932,7 +2942,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0038f8d9b3f860e4b8bcf381e2da8135, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  popupbard: {fileID: 1512048926}
+  board: {fileID: 1512048924}
 --- !u!210 &1525924647
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -2940,9 +2950,9 @@ SortingGroup:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1525924644}
   m_Enabled: 1
-  m_SortingLayerID: 1105859169
-  m_SortingLayer: 4
-  m_SortingOrder: 0
+  m_SortingLayerID: 2136798995
+  m_SortingLayer: 9
+  m_SortingOrder: 2
 --- !u!102 &1525924648
 TextMesh:
   serializedVersion: 3
