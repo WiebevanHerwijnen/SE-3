@@ -24,7 +24,7 @@ public class Interaction : MonoBehaviour {
     
     private void OnTriggerEnter2D(Collider2D other)
     {
-        //Debug.Log("werkt");
+        
         buttonrenderer.enabled = true;
         
 
