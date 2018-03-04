@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PrinterManager : MonoBehaviour {
-    public SpriteRenderer printerinventory;
+    public GameObject printerinventory;
     public Collider2D colliderdelft;
     public bool nearby;
+    
 
 	
 	void Start () {
-        printerinventory.enabled = false;
+       
 	}
 	
 	
@@ -22,7 +23,7 @@ public class PrinterManager : MonoBehaviour {
 
     public void ShowInventory()
     {
-        printerinventory.enabled = true;
+       
     }
 
 
