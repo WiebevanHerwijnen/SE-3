@@ -13,14 +13,14 @@ public class PrinterManager : MonoBehaviour {
 
 	
 	void Start () {
-        printerinventory = GameObject.Find("printerinventory");
+        printerinventory = GameObject.Find("PI");
         printerinventory.SetActive(false);
 
         plasticbarinventoryslot = GameObject.Find("plasticbarinventoryslot");
-        plasticbarinventoryslot.SetActive(false);
+       
 
         keybp = GameObject.Find("keybp");
-        keybp.SetActive(false);
+      
     }
 	
 	
@@ -34,8 +34,7 @@ public class PrinterManager : MonoBehaviour {
     public void ShowInventory()
     {
         printerinventory.SetActive(true);
-        plasticbarinventoryslot.SetActive(true);
-        keybp.SetActive(true);
+       
     }
 
 
