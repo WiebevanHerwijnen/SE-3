@@ -16,9 +16,11 @@ public class SelectCursorScript : MonoBehaviour {
     public int selected = 0;
     public bool opened = false;
     public GameObject text;
+    public GameObject PI;
 
     //scripts
     PopupManager popupboard;
+    
    
 
     
@@ -30,6 +32,7 @@ public class SelectCursorScript : MonoBehaviour {
         itemcounter = 0;
         nearby = false;
         popupboard = text.GetComponent<PopupManager>();
+       
        
         
 
@@ -56,6 +59,7 @@ public class SelectCursorScript : MonoBehaviour {
             popupboard.ShowBoard();
             popupboard.PickedUpPlasticBar();
             Invoke("HideBoard", 2);
+            
            
         }
         //pakt item 1 op
@@ -65,8 +69,7 @@ public class SelectCursorScript : MonoBehaviour {
             popupboard.ShowBoard();
             popupboard.PickedUpPlasticBar();
             Invoke("HideBoard", 2);
-
-
+            
         }
         //verplaatst de cursor naar het tweede item
         if (Input.GetKeyDown(KeyCode.RightArrow) && itemcounter == 2)
@@ -87,6 +90,7 @@ public class SelectCursorScript : MonoBehaviour {
             cursor.transform.position = item2.transform.position;
             itemcounter = 3;
             selected = 1;
+            
         }
         else if (item2.enabled == false)
         {
@@ -104,6 +108,7 @@ public class SelectCursorScript : MonoBehaviour {
             cursor.transform.position = item1.transform.position;
             itemcounter--;
             selected = 0;
+            
         }
         else if (item1.enabled == false)
         {

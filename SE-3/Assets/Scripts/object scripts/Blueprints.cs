@@ -31,7 +31,7 @@ public class Blueprints : MonoBehaviour {
 			bx2d_object.enabled = true;
 			Destroy(bx2d);
 			pickedup = true;   
-			//Verander de text van de pop-up
+			//Veranderd de text van de pop-up
 			pop_up.GetComponent<TextMesh>().text = "Opgepakt: Blueprint";
 		}
 
