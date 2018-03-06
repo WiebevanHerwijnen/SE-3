@@ -4,21 +4,24 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class ItemTracker : MonoBehaviour {
-    public Text plasticbartext;
-    public int pbcounter;
-    public GameObject[] plasticbar;
+    //stuff for plasticbar
+    public int plasticbarcounter;
+    public Text plasticbaramout;
+    public List<GameObject> items = new List<GameObject>();
+    public GameObject plasticbar;
 
-    // Use this for initialization
-    void Start() {
-      
-    }
-
-    // Update is called once per frame
-    void Update() {
-        plasticbartext.text = pbcounter.ToString("0");
-        plasticbar = GameObject.FindGameObjectsWithTag("plasticbar");      
-    }
-
+    //stuff for blueprints
+    public GameObject keyblueprint;
     
+	void Update () {
 
+        plasticbaramout.text = plasticbarcounter.ToString();
+        
+       
+    }
+    public void PlasticBarAdded()
+    {                
+        plasticbarcounter++;
+        items.Add(plasticbar);       
+    }
 }

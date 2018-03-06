@@ -16,10 +16,11 @@ public class SelectCursorScript : MonoBehaviour {
     public int selected = 0;
     public bool opened = false;
     public GameObject text;
-    public GameObject PI;
+    public GameObject inventorylildelft;
 
     //scripts
     PopupManager popupboard;
+    ItemTracker inventory;
     
    
 
@@ -32,26 +33,18 @@ public class SelectCursorScript : MonoBehaviour {
         itemcounter = 0;
         nearby = false;
         popupboard = text.GetComponent<PopupManager>();
-       
-       
-        
-
-        
-
-
+        inventory = inventorylildelft.GetComponent<ItemTracker>();         
     }
-
-   
+  
     void Update() {
         //verplaatst de cursor naar het eerste voorwerp
         if (Input.GetKeyDown(KeyCode.LeftArrow) && itemcounter == 3)
-        {
-            
+        {            
             itemcounter--;
             cursor.transform.position = item1.transform.position;
-            selected = 0;
-            
+            selected = 0;           
         }
+
         //pakt item 2 op
         if(Input.GetKeyDown(KeyCode.E) && itemcounter == 3 && selected == 1 && opened == true)
         {
@@ -59,9 +52,9 @@ public class SelectCursorScript : MonoBehaviour {
             popupboard.ShowBoard();
             popupboard.PickedUpPlasticBar();
             Invoke("HideBoard", 2);
-            
-           
+            inventory.PlasticBarAdded();
         }
+
         //pakt item 1 op
         if (Input.GetKeyDown(KeyCode.E) && itemcounter == 2 && selected == 0 && opened == true)
         {
@@ -69,8 +62,9 @@ public class SelectCursorScript : MonoBehaviour {
             popupboard.ShowBoard();
             popupboard.PickedUpPlasticBar();
             Invoke("HideBoard", 2);
-            
+            inventory.PlasticBarAdded();
         }
+
         //verplaatst de cursor naar het tweede item
         if (Input.GetKeyDown(KeyCode.RightArrow) && itemcounter == 2)
         {
@@ -79,6 +73,7 @@ public class SelectCursorScript : MonoBehaviour {
             selected = 1;
         }
     }
+
     // functie voor het oppakken van item 1
    public void PickUpItem1()
     {
@@ -97,6 +92,7 @@ public class SelectCursorScript : MonoBehaviour {
             cursor.transform.position = new Vector2(-11, -11);
         }
     }
+
     //functie voor het oppakken van item 2
     public void PickUpItem2()
     {

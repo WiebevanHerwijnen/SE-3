@@ -4,22 +4,15 @@ using UnityEngine;
 
 public class PrinterManager : MonoBehaviour {
     GameObject printerinventory;   
-    GameObject keybp;
     public Collider2D colliderdelft;
     public bool nearby;
-    public CanvasGroup pi;
+   
     
 
 	
 	void Start () {
         printerinventory = GameObject.Find("PI(canvas)");
-        printerinventory.SetActive(false);
-
-       
-       
-
-        keybp = GameObject.Find("keybp");
-      
+        printerinventory.SetActive(false);     
     }
 	
 	

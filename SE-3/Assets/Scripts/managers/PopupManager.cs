@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PopupManager : MonoBehaviour {
     private GameObject meshrenderer;   
     private MeshRenderer mr;
     private TextMesh popuptm;
-    public GameObject board;  
-    public SpriteRenderer rendererboard;
+  
+    
 
     
 
@@ -30,25 +31,27 @@ public class PopupManager : MonoBehaviour {
 	{
 		mr.enabled = false;
 	}
+
     public void PickedUpPlasticBar()
     {
         popuptm.text = "opgepakt plasticbar";
-        ShowBoard();
+        ShowBoard();            
+    }
 
-              
+    public void PickedUpBluePrintKey()
+    {
+        popuptm.text = "blueprint key ontgrendelt";
+        ShowBoard();
     }
 
     public void ShowBoard()
     {
-        rendererboard.enabled = true;
+        
         mr.enabled = true;
     }
     public void HideBoard()
     {
-        rendererboard.enabled = false;
-        mr.enabled = false;
-        
        
-
+        mr.enabled = false;            
     }
 }
