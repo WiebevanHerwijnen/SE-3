@@ -10,4 +10,20 @@ public class Scene : MonoBehaviour
     {
         SceneManager.LoadScene("204");
     }
+
+    public void LoadCredits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+
+    public void QuitGame()
+    {
+        //     Application.Quit;
+        Debug.Log("Because I can");
+    }
+
+    public void ReturnMenu()
+    {
+        SceneManager.LoadScene("Opening");
+    }
 }
