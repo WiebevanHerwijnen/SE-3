@@ -22,4 +22,9 @@ public class SceneManager : MonoBehaviour {
     {
  //       SceneManager.LoadLevel("204");
     }
+
+    public void CreditsSceneNextScene()
+    {
+ //       SceneManager.LoadLevel("Credits");
+    }
 }
