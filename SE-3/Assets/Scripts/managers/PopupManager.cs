@@ -4,9 +4,10 @@ using UnityEngine;
 
 
 public class PopupManager : MonoBehaviour {
-    private GameObject meshrenderer;   
-    private MeshRenderer mr;
+    public GameObject meshrenderer;   
+    public MeshRenderer mr;
     private TextMesh popuptm;
+    public GameObject popupboard;
   
     
 
@@ -32,11 +33,7 @@ public class PopupManager : MonoBehaviour {
 		mr.enabled = false;
 	}
 
-    public void PickedUpPlasticBar()
-    {
-        popuptm.text = "opgepakt plasticbar";
-        ShowBoard();            
-    }
+   
 
     public void PickedUpBluePrintKey()
     {
@@ -48,6 +45,7 @@ public class PopupManager : MonoBehaviour {
     {
         
         mr.enabled = true;
+        
     }
     public void HideBoard()
     {

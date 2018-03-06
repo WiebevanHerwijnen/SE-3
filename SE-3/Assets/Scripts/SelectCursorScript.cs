@@ -9,6 +9,7 @@ public class SelectCursorScript : MonoBehaviour {
     public GameObject hideboard;
     public SpriteRenderer item1;
     public SpriteRenderer item2;
+    
     public int itemcounter;
     public bool nearby;
     public bool pickedup1;
@@ -33,7 +34,8 @@ public class SelectCursorScript : MonoBehaviour {
         itemcounter = 0;
         nearby = false;
         popupboard = text.GetComponent<PopupManager>();
-        inventory = inventorylildelft.GetComponent<ItemTracker>();         
+        inventory = inventorylildelft.GetComponent<ItemTracker>();   
+        
     }
   
     void Update() {
@@ -49,8 +51,8 @@ public class SelectCursorScript : MonoBehaviour {
         if(Input.GetKeyDown(KeyCode.E) && itemcounter == 3 && selected == 1 && opened == true)
         {
             PickUpItem2();
-            popupboard.ShowBoard();
-            popupboard.PickedUpPlasticBar();
+           
+           
             Invoke("HideBoard", 2);
             inventory.PlasticBarAdded();
         }
@@ -59,8 +61,8 @@ public class SelectCursorScript : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.E) && itemcounter == 2 && selected == 0 && opened == true)
         {
             PickUpItem1();
-            popupboard.ShowBoard();
-            popupboard.PickedUpPlasticBar();
+            
+           
             Invoke("HideBoard", 2);
             inventory.PlasticBarAdded();
         }
