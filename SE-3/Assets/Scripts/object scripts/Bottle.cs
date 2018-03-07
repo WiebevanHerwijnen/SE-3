@@ -22,7 +22,6 @@ public class Bottle : MonoBehaviour {
 		//Zoek de pop-up meshrenderer om de text aan te kunnen passen
 		pop_up = GameObject.Find("popup_meshrenderer");
 		delft = GameObject.Find("Lil Delft"); //zoek de player op en stored het als een gameobject
-		movement_script = delft.GetComponent<Movement>().moveSpeed;
 	}
 
 	// Update is called once per frame
