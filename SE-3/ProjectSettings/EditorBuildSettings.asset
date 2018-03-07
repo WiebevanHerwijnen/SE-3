@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/scene/Opening.unity
     guid: cfccb0e9c51e30d46afca0bdb1b0b2f1
   - enabled: 1
-    path: Assets/scene/Credits.unity
-    guid: becb6e89a43cc0d46a6e92e3d792f292
-  - enabled: 1
     path: Assets/scene/204.unity
     guid: ecbd88f11c05fef4fb6e5faec0c72e94
+  - enabled: 1
+    path: Assets/scene/Credits.unity
+    guid: becb6e89a43cc0d46a6e92e3d792f292

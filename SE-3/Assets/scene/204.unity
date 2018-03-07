@@ -233,8 +233,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2136798995
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 337b094c598ca7e49912b64a501cde99, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4507,7 +4507,7 @@ MonoBehaviour:
   meshrenderer: {fileID: 0}
   mr: {fileID: 0}
   popuptm: {fileID: 0}
-  Tbutton: {fileID: 0}
+  Tbutton: {fileID: 156287720}
 --- !u!210 &1525924647
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -5038,8 +5038,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2136798995
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ed0e5c6e78cb45940bf2e90c2f528970, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
