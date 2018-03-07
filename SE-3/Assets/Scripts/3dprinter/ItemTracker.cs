@@ -36,9 +36,9 @@ public class ItemTracker : MonoBehaviour {
     public void RemoveItems()
     {
         items.Remove(plasticbar);
-       plasticbarcounter = plasticbarcounter - 1;
-        GameObject autie;
-        autie = new GameObject("Sleutel");
+        items.Remove(plasticbar);
+        plasticbarcounter = plasticbarcounter - 2;
+      
 
     }
 }

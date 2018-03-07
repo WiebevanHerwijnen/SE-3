@@ -13,23 +13,28 @@ public class Crafting : MonoBehaviour {
     public int amount = 2;
     public GameObject item;
     public GameObject itemspawner;
-    
-    
-    
+    public List<GameObject> keylist = new List<GameObject>();
+    public GameObject key;
+
+
+
 
     //other script
     ItemTracker itemtrackerscript;
     ItemSpawn my_itemspawner;
 
-    
-    
-    
 
+
+
+
+
+#region start and update
     public void Start()
     {
         keyformule.SetActive(false);
         itemtrackerscript = delft.GetComponent<ItemTracker>();
         my_itemspawner = delft.GetComponent<ItemSpawn>();
+        
     }
 
 
@@ -37,6 +42,8 @@ public class Crafting : MonoBehaviour {
     {
         listamount = itemtrackerscript.list_count;
     }
+    #endregion
+#region blueprint functions
 
     public void ClickKeyBluePrint()
     {
@@ -68,15 +75,24 @@ public class Crafting : MonoBehaviour {
     {
        if(listamount == amount)
         {
-            itemtrackerscript.RemoveItems();
-            itemtrackerscript.RemoveItems();
+            
+            itemtrackerscript.RemoveItems();           
             MakeItem(item);
+            AddKeyToList();
         }
     }
     public void MakeItem(GameObject item)
     {
         Instantiate(item);
         item.transform.position = itemspawner.transform.position;
+        
     }
+#endregion
+
+    public void AddKeyToList()
+    {
+        keylist.Add(key);
+    }
+
 
 }
