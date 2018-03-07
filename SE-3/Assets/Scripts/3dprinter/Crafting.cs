@@ -22,6 +22,7 @@ public class Crafting : MonoBehaviour {
     //other script
     ItemTracker itemtrackerscript;
     ItemSpawn my_itemspawner;
+    PopupManager popupmanager;
 
 
 
@@ -34,7 +35,7 @@ public class Crafting : MonoBehaviour {
         keyformule.SetActive(false);
         itemtrackerscript = delft.GetComponent<ItemTracker>();
         my_itemspawner = delft.GetComponent<ItemSpawn>();
-        
+        popupmanager = delft.GetComponent<PopupManager>();
     }
 
 
@@ -78,13 +79,14 @@ public class Crafting : MonoBehaviour {
             
             itemtrackerscript.RemoveItems();           
             MakeItem(item);
-            AddKeyToList();
+           
         }
     }
     public void MakeItem(GameObject item)
     {
         Instantiate(item);
         item.transform.position = itemspawner.transform.position;
+        popupmanager.ShowT();
         
     }
 #endregion

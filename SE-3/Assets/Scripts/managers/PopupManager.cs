@@ -6,8 +6,9 @@ using UnityEngine;
 public class PopupManager : MonoBehaviour {
     public GameObject meshrenderer;   
     public MeshRenderer mr;
-    private TextMesh popuptm;
-    public GameObject popupboard;
+    public TextMesh popuptm;
+  
+    public GameObject Tbutton;
   
     
 
@@ -22,6 +23,7 @@ public class PopupManager : MonoBehaviour {
         mr.enabled = false;
 
         popuptm = meshrenderer.GetComponent<TextMesh>();
+        HideT();
     }
 
     public void EnableMeshRendererKeyPickUp() // maakt de meshrenderer zichtbaar
@@ -51,5 +53,29 @@ public class PopupManager : MonoBehaviour {
     {
        
         mr.enabled = false;            
+    }
+
+    public void Drankje1()
+    {
+        popuptm.text = "HUH?!?!";
+        ShowBoard();
+        Invoke("HideBoard", 2);
+    }
+    
+    public void Drankje2()
+    {
+        popuptm.text = "OpGEdr0NK3n: Gek Gr03n drANKj3";
+        ShowBoard();
+        Invoke("HideBoard", 2);
+    }
+
+    public void ShowT()
+    {
+        Tbutton.SetActive(true);
+    }
+
+    public void HideT()
+    {
+        Tbutton.SetActive(false);
     }
 }

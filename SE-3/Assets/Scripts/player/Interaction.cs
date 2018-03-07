@@ -46,13 +46,17 @@ public class Interaction : MonoBehaviour {
 		nokeyrenderer.enabled = false;
         if (Input.GetKeyDown(KeyCode.E))
         {
-            pop.enabled = true;           
-            Invoke("Hold_Popup", 1);
+            Routine();
             mrobject.GetComponent<PopupManager>().EnableMeshRendererKeyPickUp();// called the functie die de meshrenderer zichtbaarmaakt(werkt nog niet)
 
 
         }
         
+    }
+    public void Routine()
+    {
+        pop.enabled = true;
+        Invoke("Hold_Popup", 1);
     }
 
 }

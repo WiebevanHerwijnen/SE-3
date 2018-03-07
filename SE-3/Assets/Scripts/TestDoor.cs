@@ -8,21 +8,37 @@ public class TestDoor : MonoBehaviour {
     public bool nearby;
     Vector2 deurlocatie2;
    public int keylistcount;
+    public bool locked;
+    
 
     //other scripts
     Crafting crafting;
+    Interaction interaction;
+
 
 
 	// Use this for initialization
 	void Start () {
+        
         deurlocatie2 = deur2.transform.position;
         crafting = delft.GetComponent<Crafting>();
-        
+        locked = true;
+        interaction = delft.GetComponent<Interaction>();
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		if (Input.GetKeyDown(KeyCode.E) && nearby == true)
+	void Update ()
+    {
+        if (locked == true && nearby == true)
+        {
+            interaction.noKey();
+        }
+
+        if (keylistcount == 1)
+        {
+            locked = false;
+        }
+        if (Input.GetKeyDown(KeyCode.E) && nearby == true && locked == false)
         {
             delft.transform.position = deurlocatie2;
            

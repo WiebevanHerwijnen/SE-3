@@ -5,6 +5,7 @@ using UnityEngine;
 public class PickUpItem : MonoBehaviour {
     public GameObject item;
      public bool nearby;
+    public BoxCollider2D colliderprefab;
 
     private void Update()
     {
@@ -18,11 +19,11 @@ public class PickUpItem : MonoBehaviour {
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D colliderprefab)
     {
         nearby = true;
     }
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnCollisionExit2D(Collision2D colliderprefab)
     {
         nearby = false;
     }

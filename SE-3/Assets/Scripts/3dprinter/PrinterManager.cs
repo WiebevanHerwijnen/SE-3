@@ -6,13 +6,25 @@ public class PrinterManager : MonoBehaviour {
     GameObject printerinventory;   
     public Collider2D colliderdelft;
     public bool nearby;
+    public GameObject key;
+    public GameObject delft;
+    public int keylist;
+
+    //other script
+    Crafting crafting;
+    PopupManager popupmanager;
+
    
     
 
 	
 	void Start () {
         printerinventory = GameObject.Find("PI(canvas)");
-        printerinventory.SetActive(false);     
+        printerinventory.SetActive(false);
+        crafting = delft.GetComponent<Crafting>();
+        popupmanager = delft.GetComponent<PopupManager>();
+      
+
     }
 	
 	
@@ -21,7 +33,18 @@ public class PrinterManager : MonoBehaviour {
         {
             ShowInventory();
         }
-	}
+        if (Input.GetKeyDown(KeyCode.T) && nearby == true)
+        {
+            key.SetActive(false);
+            crafting.AddKeyToList();
+            popupmanager.HideT();
+        }
+        key = GameObject.FindGameObjectWithTag("Key");
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            printerinventory.SetActive(false);
+        }
+    }
 
     public void ShowInventory()
     {
@@ -39,4 +62,6 @@ public class PrinterManager : MonoBehaviour {
         nearby = false;
         printerinventory.SetActive(false);
     }
+
+ 
 }
