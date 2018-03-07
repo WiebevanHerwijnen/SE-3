@@ -11,9 +11,15 @@ public class Crafting : MonoBehaviour {
     public GameObject delft;
     public int listamount;
     public int amount = 2;
+    public GameObject item;
+    public GameObject itemspawner;
+    
+    
+    
 
     //other script
     ItemTracker itemtrackerscript;
+    ItemSpawn my_itemspawner;
 
     
     
@@ -23,7 +29,7 @@ public class Crafting : MonoBehaviour {
     {
         keyformule.SetActive(false);
         itemtrackerscript = delft.GetComponent<ItemTracker>();
-        
+        my_itemspawner = delft.GetComponent<ItemSpawn>();
     }
 
 
@@ -64,6 +70,13 @@ public class Crafting : MonoBehaviour {
         {
             itemtrackerscript.RemoveItems();
             itemtrackerscript.RemoveItems();
+            MakeItem(item);
         }
     }
+    public void MakeItem(GameObject item)
+    {
+        Instantiate(item);
+        item.transform.position = itemspawner.transform.position;
+    }
+
 }

@@ -799,6 +799,8 @@ MonoBehaviour:
   delft: {fileID: 394954460}
   listamount: 0
   amount: 2
+  item: {fileID: 1574711380432276, guid: 9dde4511e40730b4f84588739c155e6e, type: 2}
+  itemspawner: {fileID: 1699690467}
 --- !u!1 &419516845
 GameObject:
   m_ObjectHideFlags: 0
@@ -4204,6 +4206,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2020725206}
+  - {fileID: 1699690468}
   m_Father: {fileID: 825035903}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4245,6 +4248,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colliderdelft: {fileID: 394954461}
   nearby: 0
+--- !u!1 &1699690467
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1699690468}
+  m_Layer: 0
+  m_Name: itemspawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1699690468
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1699690467}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0412, y: -0.0014, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1695627428}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1705204430
 GameObject:
   m_ObjectHideFlags: 0
