@@ -36,20 +36,22 @@ public class Door : MonoBehaviour {
        
     }
 
-    private void OnTriggerEnter2D (Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         entered = true;
-		//Controleren of deur op slot zit en of de deur fake is of niet
-		if (locked && !fake_door) {
-			//Als de deur op slot zit en niet fake is: controleren of sleutel opgepakt is
-			if (key.GetComponent<TTKey> ().pickedup) {
-				locked = false;
-			}
-		}
+        //Controleren of deur op slot zit en of de deur fake is of niet
+        if (locked && !fake_door)
+        {
+            //Als de deur op slot zit en niet fake is: controleren of sleutel opgepakt is
+            if (key.GetComponent<TTKey>().pickedup)
+            {
+                locked = false;
+            }
+        }
     }
 
 
-    
+
 
     private void OnTriggerExit2D(Collider2D other)
     {
