@@ -636,12 +636,10 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 335717522}
-  m_Text: 'Dagboek:
-
-    50 Januari 15e lesuur
-
-
-    Weer een tekst'
+  m_Text: "Dagboek:\n50 Januari 15e lesuur\n\nIk van dit plein zien te komen!\nEn
+    die verdoemde conci\xEBrges \ngeven mij die sleutels maar niet!\n\nWie niet sterk
+    is... (Wat hier\nzeker niet het geval is) \nMoet van Delft heten! \n\nIk ga gewoon
+    mijn eigen sleutel\nmaken!"
   m_OffsetZ: 0
   m_CharacterSize: 0.005
   m_LineSpacing: 1
@@ -3752,12 +3750,8 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1403631152}
-  m_Text: 'Dagboek:
-
-    21 Oktober 3e lesuur
-
-
-    Gewoon een tekst'
+  m_Text: "Dagboek:\n21 Oktober 3e lesuur\n\nNiet veel meegemaakt vandaaag.\nHelaas
+    heb ik wel weer 3 leerlingen \neen onvoldoende moeten geven :(\n"
   m_OffsetZ: 0
   m_CharacterSize: 0.005
   m_LineSpacing: 1
