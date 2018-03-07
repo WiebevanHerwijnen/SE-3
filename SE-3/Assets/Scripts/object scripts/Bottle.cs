@@ -11,7 +11,7 @@ public class Bottle : MonoBehaviour {
 	//Maak game object om pop-up te selecteren
 	public GameObject pop_up;
 	//other scripts
-	float movement_script;
+	
 
 	// Use this for initialization
 	void Start () {
