@@ -11,6 +11,8 @@ public class Book : MonoBehaviour {
     private int Page = 1;
     public GameObject Pagina1;
     public GameObject Pagina2;
+    bool max;
+    bool min;
 
 	// Use this for initialization
 	void Start () {
@@ -34,15 +36,31 @@ public class Book : MonoBehaviour {
             Closebook();
         }
 
-        if (Input.GetKeyDown(KeyCode.RightArrow) && opened == true && nearby && bx2d)
+        if (Input.GetKeyDown(KeyCode.RightArrow) && opened == true && nearby && bx2d && max == false)
         {
             Page += 1;
             UpdateBook();
+            if (Page == 2)
+            {
+                max = true;
+            }
+            if (Page >= 2)
+            {
+                min = false;
+            }
         }
-        if (Input.GetKeyDown(KeyCode.LeftArrow) && opened == true && nearby && bx2d)
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && opened == true && nearby && bx2d && min == false)
         {
             Page -= 1;
             UpdateBook();
+            if (Page == 1)
+            {
+                min = true;
+            }
+            if (Page <= 1)
+            {
+                max = false;
+            }
         }
 
     }
