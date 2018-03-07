@@ -7,7 +7,7 @@ public class TestDoor : MonoBehaviour {
     public GameObject deur2;    
     public bool nearby;
     Vector2 deurlocatie2;
-   // public int keylistcount;
+   public int keylistcount;
 
     //other scripts
     Crafting crafting;
@@ -27,7 +27,7 @@ public class TestDoor : MonoBehaviour {
             delft.transform.position = deurlocatie2;
            
         }
-       // keylistcount = crafting.keylist.Count;
+       keylistcount = crafting.keylist.Count;
     }
 
    

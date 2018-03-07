@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class PickUpItem : MonoBehaviour {
     public GameObject item;
-    bool nearby;
+     public bool nearby;
 
-     void PickUp()
+    private void Update()
+    {
+        PickUp();
+    }
+    void PickUp()
     {
         if(nearby == true && Input.GetKeyDown(KeyCode.T))
         {
