@@ -6279,6 +6279,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hearts: []
   heart: {fileID: 264468870}
+  HeartPanel: {fileID: 1183056600}
   heartcount: 0
 --- !u!1 &1944175839 stripped
 GameObject:
