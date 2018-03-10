@@ -6,7 +6,10 @@ public class ZuurKast : MonoBehaviour {
     public GameObject delft;
     public GameObject erlenmeyer1;
     public GameObject erlenmeyer2;  
-    public GameObject TP;
+    public GameObject TP1;
+    public GameObject TP2;
+    public GameObject TP3;
+    public int Tpnumber;
     public bool nearby;
 
     PopupManager popupManager;
@@ -25,13 +28,30 @@ public class ZuurKast : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown(KeyCode.Alpha1) && nearby == true)
+        Tpnumber = Random.Range(1, 4);
+        if (Input.GetKeyDown(KeyCode.Alpha1) && nearby == true)
         {
-           
-            popupManager.Drankje1();
-            interaction.Routine();
-            delft.transform.position = TP.transform.position;
             
+            if(Tpnumber == 1)
+            {
+                popupManager.Drankje1();
+                interaction.Routine();
+                delft.transform.position = TP1.transform.position;
+            }
+            else if(Tpnumber == 2)
+            {
+                popupManager.Drankje1();
+                interaction.Routine();
+                delft.transform.position = TP2.transform.position;
+            }
+            else if (Tpnumber == 3)
+            {
+                popupManager.Drankje1();
+                interaction.Routine();
+                delft.transform.position = TP3.transform.position;
+            }
+
+
         }
         if (Input.GetKeyDown(KeyCode.Alpha2) && nearby == true)
         {
