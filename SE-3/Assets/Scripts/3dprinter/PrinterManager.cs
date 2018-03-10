@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PrinterManager : MonoBehaviour {
-    GameObject printerinventory;   
+    public GameObject printerinventory;   
     public Collider2D colliderdelft;
     public bool nearby;
     public GameObject key;
@@ -18,8 +18,7 @@ public class PrinterManager : MonoBehaviour {
     
 
 	
-	void Start () {
-        printerinventory = GameObject.Find("PI(canvas)");
+	void Start () {       
         printerinventory.SetActive(false);
         crafting = delft.GetComponent<Crafting>();
         popupmanager = delft.GetComponent<PopupManager>();
@@ -50,6 +49,10 @@ public class PrinterManager : MonoBehaviour {
     {
         printerinventory.SetActive(true);
        
+    }
+    public void HideInventory()
+    {
+        printerinventory.SetActive(false);
     }
 
 

@@ -1,48 +1,76 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour {
-    //lists
-    public List<GameObject> hearts = new List<GameObject>();
-    //GO
-    public GameObject heart;
-    //other
-    public Transform HeartPanel;
-    public int heartcount;
+    public Image healthbar;
 
-	// 40.5 pixels
-	void Start () {
-        
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        
+    public Sprite one_hp;
+    public Sprite two_hp;
+    public Sprite three_hp;
+    public Sprite four_hp;
+
+  public int currenthealth;
+    int maxhealth;
+    int minhealth;
+
+    private void Start()
+    {
+        currenthealth = 3;
+        maxhealth = 4;
+        minhealth = 1;
+
+    }
+
+    private void Update()
+    {
+#region healthbarstuff
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            AddHeart();
-           
+            HealthDown();
         }
         if (Input.GetKeyDown(KeyCode.P))
         {
-            RemoveHeart();
-
+            HealthUp();
         }
+        if (currenthealth == 1)
+        {
+            healthbar.sprite = one_hp;
+        }
+        if (currenthealth == 2)
+        {
+            healthbar.sprite = two_hp;
+        }
+        if (currenthealth == 3)
+        {
+            healthbar.sprite = three_hp;
+        }
+        if (currenthealth == 4)
+        {
+            healthbar.sprite = four_hp;
+        }
+        if(currenthealth == maxhealth)
+        {
+            currenthealth = 4;
+        }
+        if (currenthealth == minhealth)
+        {
+            currenthealth = 1;
+        }
+        #endregion
 
-
-
-        heartcount = hearts.Count;
     }
-    public void AddHeart()
+
+    public void HealthDown()
     {
-        heart = Instantiate(heart);
-        heart.transform.parent = HeartPanel;
-        hearts.Add(heart);
+        currenthealth--;
+    }
+    public void HealthUp()
+    {
+        currenthealth++;
     }
 
-    public void RemoveHeart()
-    {
-        hearts.Remove(heart);
-    }
+
+
 }
