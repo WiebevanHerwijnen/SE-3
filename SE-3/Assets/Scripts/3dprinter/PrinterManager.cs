@@ -35,8 +35,7 @@ public class PrinterManager : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.T) && nearby == true)
         {
             key.SetActive(false);
-            crafting.AddKeyToList();
-            popupmanager.HideT();
+            crafting.AddKeyToList();           
         }
         key = GameObject.FindGameObjectWithTag("Key");
         if (Input.GetKeyDown(KeyCode.Escape))

@@ -4,24 +4,24 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Crafting : MonoBehaviour {
+    //gameobjects
     public GameObject keyformule;
+    public GameObject delft;
+    public GameObject item;
+    public GameObject itemspawner;
+    public GameObject key;
+    //sprites
     public Image keyblueprint;
     public Sprite lockedimage;
     public Image cancelbutton;
-    public GameObject delft;
+    //variables
     public int listamount;
     public int amount = 2;
-    public GameObject item;
-    public GameObject itemspawner;
-    public List<GameObject> keylist = new List<GameObject>();
-    public GameObject key;
-
-
-
-
+    //lists
+    public List<GameObject> keylist = new List<GameObject>();   
     //other script
     ItemTracker itemtrackerscript;
-    ItemSpawn my_itemspawner;
+    
     PopupManager popupmanager;
    
 
@@ -35,7 +35,7 @@ public class Crafting : MonoBehaviour {
     {
         keyformule.SetActive(false);
         itemtrackerscript = delft.GetComponent<ItemTracker>();
-        my_itemspawner = delft.GetComponent<ItemSpawn>();
+        
         popupmanager = delft.GetComponent<PopupManager>();
        
     }
@@ -76,7 +76,7 @@ public class Crafting : MonoBehaviour {
     }
     public void ProducePlasticBar()
     {
-       if(listamount == amount)
+       if(listamount >= amount)
         {
             
             itemtrackerscript.RemoveItems();           

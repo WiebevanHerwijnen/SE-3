@@ -10,8 +10,9 @@ public class Interaction : MonoBehaviour {
     public GameObject mrobject;
     public GameObject kast;
 
+
     // Use this for initialization
-    void Start()
+    private void Start()
     {
         buttonrenderer.enabled = false;
 		nokeyrenderer.enabled = false;
@@ -24,10 +25,9 @@ public class Interaction : MonoBehaviour {
     
     private void OnTriggerEnter2D(Collider2D other)
     {
+        E_enabled();
         
-        buttonrenderer.enabled = true;
-        
-
+  
     }
 	public void noKey() 
 	{
@@ -51,6 +51,15 @@ public class Interaction : MonoBehaviour {
 
 
         }
+        
+    }
+
+    public void E_enabled()
+    {
+        buttonrenderer.enabled = true;
+    }
+    public void E_disable()
+    {
         
     }
     public void Routine()
